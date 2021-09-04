@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url('../img/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: #FFFFFF;
+    margin-top: 4rem;
+    width: 300px;
+    height: 80vh;
+    border-radius: 1rem;
+}
+
+.order_card img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.order_title {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.order_description {
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color:#B9BECC;
+}
+
+.plan_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    height: 75px;
+    margin: 0 1rem;
+}
+
+.plan_card img {
+    margin-left: 1rem;
+}
+
+.plan_type {
+    margin: 0 2.5rem 0 1rem;
+}
+
+.plan_type h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.plan_type p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #747781;
+    padding-top: 0.1rem;
+}
+
+.change_btn {
+    color: var(--Bright-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+
+.change_btn:hover {
+    text-decoration: none;
+}
+
+.order_btn {
+    color: #FFFFFF;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.904);
+    height: 40px;
+    width: 270px;
+    align-self: center;
+    border-radius: .5rem;
+    box-shadow: 0 6px 30px 0 var(--Bright-blue);
+    cursor: pointer;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: .5rem;
+}
+
+.order_btn:hover {
+    background-color: var(--Bright-blue);
+}
+
+.order_cancel {
+    color: #737C94;
+    background: none;
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    padding-top: 1rem;
+}
+
+.order_cancel:hover {
+    color: #000;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url('../img/pattern-background-desktop.svg');
+
+    }
+}
+
+@media screen and (min-width:500px) {
+    .order_card{
+        height: 85vh;
+    }
+}
